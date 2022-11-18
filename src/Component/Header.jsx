@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import '../style.css';
-import { BrowserRouter } from 'react-router-dom';
-import { Link } from "react-router-dom"
+import { Link,BrowserRouter } from "react-router-dom"
 
 
 export default function Header() {
@@ -19,13 +18,16 @@ export default function Header() {
 
 							<ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
 								<li className="nav-item">
-								<BrowserRouter><Link to="/" className='nav-link align-middle px-0'>
+								<Link to="/" className='nav-link align-middle px-0'>
 									<i className="fa fa-tachometer" aria-hidden="true"></i> <span className="ms-1 d-none d-sm-inline">Dashboard</span>
-								</Link></BrowserRouter>
+								</Link>
 								</li>
 								<li>
-									<a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-									<i className="fa fa-home" aria-hidden="true"></i><span className="ms-1 d-none d-sm-inline">Home Content</span> </a>
+							
+								<Link to="/homecontent" className='nav-link align-middle px-0'>
+									<i className="fa fa-home" aria-hidden="true"></i><span className="ms-1 d-none d-sm-inline">Home Content</span>
+								</Link>
+							
 								</li>
 								<li>
 									<a href="#" className="nav-link px-0 align-middle">

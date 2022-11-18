@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
 import Dashboardcomponen from '../Component/Dashboardcomponent'
-import Overview from '../Component/Overview'
+import Homebanner from '../Component/Homedata/Homebanner'
 
-export default function Dashboard() {
+export default function homecontent() {
   return (
     <Fragment>
-      <Dashboardcomponen/>
-       <Overview/>
+        <Dashboardcomponen/>
+        <Homebanner/>
     </Fragment>
   )
 }

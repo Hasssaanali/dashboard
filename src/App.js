@@ -1,6 +1,7 @@
 import './App.css';
 import './style.css';
-import { Fragment } from 'react';
+import { Fragment ,useState, useEffect} from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from './Component/Header';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,16 +9,47 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
-import Layout from './layout';
-
+import Dashboard from './Pages/dashboard';
+import Homecontent from './Pages/homecontent';
+import AOS from "aos";
+import Preloader from './Component/Preloader';
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    },3000)
+  }, [])
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+
   return (
     <Fragment>
+       {loading ? <Preloader/> : <>
+      <BrowserRouter>
       <div className='mypages'>
-      <Header/>
-      <Layout/>
+        <Header/>
+
+        <div className="col py-3 myheaderbar">
+        <Routes>
+        <Route exact path="/" element={<Dashboard/>} />
+        <Route exact path="homecontent" element={<Homecontent/>} />
+        </Routes>
+        </div>
+
+
       </div>
+      </BrowserRouter>
+      </>
+}
     </Fragment>
   );
 }
