@@ -15,7 +15,7 @@ export default function Dashboardcomponen() {
   });
 // search
 
-console.log(time);
+// console.log(time);
   return (
 
 

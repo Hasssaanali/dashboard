@@ -75,6 +75,8 @@ ul#menu::-webkit-scrollbar{
     margin: 20px 25px;
     background: #fff;
     border-radius: 30px;
+    height: 95vh;
+    overflow-y: scroll;
 }
 .flex-nowrap{
     display: contents !important;
@@ -246,4 +248,158 @@ input.textbox {
 .leftpadding{
     padding-left: 20px;
     padding-top: 10px;
+}
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    width: 100%;
+    border: unset;
+}
+.nav-tabs{
+    border: unset !important;
+}
+.tabss li .nav-link{
+    border: 2px solid transparent !important;
+    background: #F1F4FB !important;
+    color: #000 !important;
+    transition: all 300ms ease-in-out;
+    margin: 0 10px !important;
+}
+.tabss li{
+    margin: 0 10px !important;
+}
+.tabss .nav-link.active {
+    border: 2px solid #3B36DB !important;
+    background: #3B36DB !important;
+    color: #fff !important;
+    transition: all 300ms ease-in-out;
+}
+.tabss{
+    padding: 30px 20px !important;
+}
+.table > thead {
+    vertical-align: middle !important; 
+    height: 45px;
+    border: 1px solid #efefef;
+}
+th {
+    padding-left: 1rem !important;
+}
+td{
+    --bs-table-accent-bg:#fff !important;
+    padding-left: 1rem !important;
+    padding-top:  1rem !important;
+    padding-bottom:  1rem !important;
+    border: unset !important;
+}
+.table-bordered > :not(caption) > * {
+    border-width: 0 !important;
+    border: 1px solid #efefef !important;
+}
+.table-bordered > :not(caption) > * > * {
+    border-width: 0 0px !important;
+}
+.tab-pane {
+    margin: 20px;
+    background: #F1F4FB;
+    border-radius: 30px;
+    padding: 30px;
+    height: 65vh;
+    overflow-y: scroll;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.addbtn {
+    padding: 12px 35px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 25px;
+    transition: all 300ms ease-in-out;
+    text-decoration: unset;
+    color: #000;
+}
+.addbtn:hover {
+    color: #FFF;
+    background: #3B36DB;
+    transition: all 300ms ease-in-out;
+}
+.mybuton {
+    margin-top: 40px;
+    text-align: end;
+}
+img.d-block.w-100 {
+    width: 50px !important;
+}
+td {
+    width: 50px;
+}
+p.mytext {
+    height: 45px;
+    overflow-y: scroll;
+    margin: 0;
+    margin-right: 60px;
+}
+p.mytext::-webkit-scrollbar {
+    width: 0px !important; 
+}
+
+tr {
+    vertical-align: middle;
+}
+button.transparent {
+    background: transparent;
+    border: unset;
+    font-weight: 600;
+    color: #3B36DB;
+    text-decoration: underline;
+}
+
+.tabss form {
+    padding: 7px;
+    border-radius: 13px;
+    border: unset !important;
+    margin: auto !important;
+    width: 60%;
+    float: none;
+    box-shadow: unset;
+    background: #F1F4FB;
+    padding: 30px 20px;
+}
+.tabss form input{
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 15px;
+    border-color: #efefef;
+}
+.tabss form textarea{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-color: #efefef;
+    height: 200px;
+}
+.tabss input#file{
+    background-color: transparent !important;
+    border: unset !important;
+}
+form button {
+    border: 1px solid #efefef;
+    background: #fff;
+    padding: 13px 30px;
+    border-radius: 30px;
+    color: #000;
+    transition: all 200ms ease-in-out;
+}
+form button:hover {
+    border: 1px solid #efefef;
+    background: #3B36DB;
+    padding: 13px 30px;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+}
+.tabss form {
+    margin-top: 70px !important;
+}
+.col.py-3::-webkit-scrollbar {
+    width: 0px !important; 
+}
+.tab-pane::-webkit-scrollbar {
+    width: 0px !important; 
 }

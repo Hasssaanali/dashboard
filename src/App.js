@@ -13,6 +13,7 @@ import Dashboard from './Pages/dashboard';
 import Homecontent from './Pages/homecontent';
 import AOS from "aos";
 import Preloader from './Component/Preloader';
+import Addbanner from './Component/Homedata/Addbanner';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Dashboard/>} />
         <Route exact path="homecontent" element={<Homecontent/>} />
+        <Route exact path="Addbanner" element={<Addbanner/>} />
         </Routes>
         </div>
 
