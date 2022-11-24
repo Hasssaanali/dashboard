@@ -23,15 +23,13 @@ export default function Header() {
 								</Link>
 								</li>
 								<li>
-							
 								<Link to="/homecontent" className='nav-link align-middle px-0'>
 									<i className="fa fa-home" aria-hidden="true"></i><span className="ms-1 d-none d-sm-inline">Home Content</span>
 								</Link>
-							
 								</li>
 								<li>
-									<a href="#" className="nav-link px-0 align-middle">
-									<i className="fa fa-rss" aria-hidden="true"></i><span className="ms-1 d-none d-sm-inline">Blogs</span></a>
+								<Link to="/Blogs" className='nav-link align-middle px-0'>
+									<i className="fa fa-rss" aria-hidden="true"></i><span className="ms-1 d-none d-sm-inline">Blogs</span></Link>
 								</li>
 								<li>
 									<a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle ">

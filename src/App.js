@@ -14,6 +14,10 @@ import Homecontent from './Pages/homecontent';
 import AOS from "aos";
 import Preloader from './Component/Preloader';
 import Addbanner from './Component/Homedata/Addbanner';
+import Addservice from './Component/Homedata/Addservice';
+import Addreview from './Component/Homedata/Addreview';
+import Blogs from './Pages/Blogs';
+import Addblogs from './Component/Blogs/Addblogs';
 
 function App() {
 
@@ -44,6 +48,10 @@ function App() {
         <Route exact path="/" element={<Dashboard/>} />
         <Route exact path="homecontent" element={<Homecontent/>} />
         <Route exact path="Addbanner" element={<Addbanner/>} />
+        <Route exact path="Addservice" element={<Addservice/>} />
+        <Route exact path="Addreview" element={<Addreview/>} />
+        <Route exact path="Blogs" element={<Blogs/>} />
+        <Route exact path="Addblogs" element={<Addblogs/>} />
         </Routes>
         </div>
 

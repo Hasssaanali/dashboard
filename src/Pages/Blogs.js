@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react'
+import Blogstable from '../Component/Blogs/Blogstable'
 import Dashboardcomponen from '../Component/Dashboardcomponent'
-import Homebanner from '../Component/Homedata/Homebanner'
 
-export default function homecontent() {
+export default function Blogs() {
   return (
     <Fragment>
         <Dashboardcomponen/>
-        <Homebanner/>
+        <div className='tabss'>
+            <Blogstable/>
+        </div>
     </Fragment>
   )
 }
- 

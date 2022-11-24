@@ -5,10 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 
-export default function Addservice() {
-  const navigate = useNavigate();
+export default function Addreview() {
+    const navigate = useNavigate();
 
     const [Heading, setHeading] = useState('');
+    const [Company, setCompany] = useState('');
     const [Text, setText] = useState('')
     const [image, setimage] = useState('')
 
@@ -24,6 +25,7 @@ export default function Addservice() {
         else{
             const formData = new FormData;
             formData.append('heading',Heading);
+            formData.append('company',Company);
             formData.append('text',Text);
             formData.append('image',image);
             toast("Service Add Successfully");
@@ -43,6 +45,11 @@ export default function Addservice() {
                                     <input value={Heading} name="heading" type="text" className="form-control" id="inputEmail4" placeholder="Heading" onChange={(e) => setHeading(e.target.value)} required />
                                 </div>
                             </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-12">
+                                    <input value={Company} name="company" type="text" className="form-control" id="inputEmail4" placeholder="Company" onChange={(e) => setCompany(e.target.value)} required />
+                                </div>
+                            </div>
                             <div className="form-group">
                                 <textarea value={Text} name='text' type="text" className="form-control" id="inputAddress2" placeholder="Text For Banner" onChange={(e) => setText(e.target.value)} />
                             </div>
@@ -50,7 +57,7 @@ export default function Addservice() {
                                 <input value={image} name="image" type="file" className="form-control" id="file" accept="jpg" placeholder="resume" onChange={(e) => setimage(e.target.value)} required />
                             </div>
 
-                            <button onClick={SubmitDATA}>Add Service</button>
+                            <button onClick={SubmitDATA}>Add Review</button>
                             <ToastContainer />
 
                         </form>

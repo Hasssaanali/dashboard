@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Table from 'react-bootstrap/Table';
 import { reviews } from '../../Data/Data';
+import { Link } from 'react-router-dom';
 
 export default function Reviewstab() {
   return (
@@ -33,7 +34,7 @@ export default function Reviewstab() {
    })}    
          </tbody>
        </Table>
-       <div className='mybuton'><button className='addbtn'>Add Review</button></div>
+       <div className='mybuton'><Link to="/Addreview" className='addbtn'>Add Review</Link></div>
        </Fragment>
   )
 }

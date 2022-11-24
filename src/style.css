@@ -403,3 +403,18 @@ form button:hover {
 .tab-pane::-webkit-scrollbar {
     width: 0px !important; 
 }
+.tab-panea {
+    margin: 20px;
+    background: #F1F4FB;
+    border-radius: 30px;
+    padding: 30px;
+    height: 75vh;
+    overflow-y: scroll;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.tab-panea::-webkit-scrollbar {
+    width: 0px !important; 
+}
+.article{
+    margin-bottom: 40px;
+}

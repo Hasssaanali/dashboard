@@ -36,12 +36,12 @@ export default function Addbanner() {
     <Fragment>
         <Dashboardcomponen/>
         <div className='tabss'>
-        <h2>Add Banner</h2>
+        <h2>Add New Banner</h2>
 
         <form >
                             <div className="form-row">
                                 <div className="form-group col-md-12">
-                                    <input value={Heading} name="heading" type="text" className="form-control" id="inputEmail4" placeholder="Full Name" onChange={(e) => setHeading(e.target.value)} required />
+                                    <input value={Heading} name="heading" type="text" className="form-control" id="inputEmail4" placeholder="Heading" onChange={(e) => setHeading(e.target.value)} required />
                                 </div>
                             </div>
                             <div className="form-group">

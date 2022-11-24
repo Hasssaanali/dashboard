@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Table from 'react-bootstrap/Table';
 import { services } from '../../Data/Data';
+import { Link } from 'react-router-dom';
 
 export default function Servicetab() {
   return (
@@ -31,7 +32,7 @@ return (
 })}    
       </tbody>
     </Table>
-    <div className='mybuton'><button className='addbtn'>Add Service</button></div>
+    <div className='mybuton'><Link to="/Addservice" className='addbtn'>Add Service</Link></div>
     </Fragment>
   )
 }
