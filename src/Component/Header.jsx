@@ -35,8 +35,8 @@ export default function Header() {
 									<a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle ">
 									<i className="fa fa-briefcase" aria-hidden="true"></i> <span className="ms-1 d-none d-sm-inline">Services <i className="fa fa-chevron-down" aria-hidden="true"></i></span></a>
 									<ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-										<li><a href="#" className="nav-link px-0"><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">Web Development</span></a></li>
-										<li><a href="#" className="nav-link px-0"><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">UI/UX Design</span> 2</a></li>
+										<li><Link to="/Web" className='nav-link align-middle px-0'><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">Web Development</span></Link></li>
+										<li><Link to="/Ui" className='nav-link align-middle px-0'><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">UI/UX Design</span> 2</Link></li>
 										<li><a href="#" className="nav-link px-0"><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">SEO</span> 2</a></li>
 										<li><a href="#" className="nav-link px-0"><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">Video Animation</span> 2</a></li>
 										<li><a href="#" className="nav-link px-0"><i className="fa fa-share" aria-hidden="true"></i> <span className="d-none d-sm-inline">Digital Marketing</span> 2</a></li>

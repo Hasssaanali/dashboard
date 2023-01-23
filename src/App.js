@@ -17,7 +17,14 @@ import Addbanner from './Component/Homedata/Addbanner';
 import Addservice from './Component/Homedata/Addservice';
 import Addreview from './Component/Homedata/Addreview';
 import Blogs from './Pages/Blogs';
+import Web from './Pages/Web';
 import Addblogs from './Component/Blogs/Addblogs';
+import Addweb from './Component/Web/Addweb';
+import Addwooo from './Component/Web/Webtable';
+import Addui from './Component/Ui/Addui';
+import Ui from './Pages/Ui';
+import Woobtable from './Component/Web/Wootable';
+import Addwoo from './Component/Web/Addwoo';
 
 function App() {
 
@@ -52,6 +59,12 @@ function App() {
         <Route exact path="Addreview" element={<Addreview/>} />
         <Route exact path="Blogs" element={<Blogs/>} />
         <Route exact path="Addblogs" element={<Addblogs/>} />
+        <Route exact path="Web" element={<Web/>} />
+        <Route exact path="Addweb" element={<Addweb/>} />
+        <Route exact path="Wootable" element={<Woobtable/>} />
+        <Route exact path="Addwoo" element={<Addwoo/>} />
+        <Route exact path="Addui" element={<Addui/>} />
+        <Route exact path="Ui" element={<Ui/>} />
         </Routes>
         </div>
 
