@@ -4,6 +4,9 @@ import Tabs from 'react-bootstrap/Tabs';
 
 import Webtable from './Webtable';
 import Woobtable from './Wootable';
+import Reacttable from './Reacttable';
+import Wixbtable from './Wixtable';
+import Shopifytable from './Shopifytable';
 
 
 export default function Webdevelopment() {
@@ -18,13 +21,13 @@ export default function Webdevelopment() {
       <Woobtable/>
       </Tab>
       <Tab eventKey="react" title="React">
- 
+      <Reacttable/>
       </Tab>
       <Tab eventKey="wix" title="Wix">
-      
+      <Wixbtable/>
       </Tab>
       <Tab eventKey="shopify" title="Shopify">
-      
+      <Shopifytable/>
       </Tab>
     </Tabs>
     </div>

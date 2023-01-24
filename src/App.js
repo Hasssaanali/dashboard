@@ -25,6 +25,12 @@ import Addui from './Component/Ui/Addui';
 import Ui from './Pages/Ui';
 import Woobtable from './Component/Web/Wootable';
 import Addwoo from './Component/Web/Addwoo';
+import Reacttable from './Component/Web/Reacttable';
+import Addreact from './Component/Web/Addreact';
+import Wixtable from './Component/Web/Wixtable';
+import Addwix from './Component/Web/Addwix';
+import Shopifytable from './Component/Web/Shopifytable';
+import Addshopify from './Component/Web/Addshopify';
 
 function App() {
 
@@ -63,6 +69,12 @@ function App() {
         <Route exact path="Addweb" element={<Addweb/>} />
         <Route exact path="Wootable" element={<Woobtable/>} />
         <Route exact path="Addwoo" element={<Addwoo/>} />
+        <Route exact path="Reacttable" element={<Reacttable/>} />
+        <Route exact path="Addreact" element={<Addreact/>} />
+        <Route exact path="Wixtable" element={<Wixtable/>} />
+        <Route exact path="Addwix" element={<Addwix/>} />
+        <Route exact path="Shopifytable" element={<Shopifytable/>} />
+        <Route exact path="Addshopify" element={<Addshopify/>} />
         <Route exact path="Addui" element={<Addui/>} />
         <Route exact path="Ui" element={<Ui/>} />
         </Routes>
